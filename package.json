@@ -2,7 +2,7 @@
   "name": "mybankingsystem",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rakshi1995.github.io/Bankingsystem_frontend/",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
