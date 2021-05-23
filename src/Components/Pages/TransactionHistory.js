@@ -13,7 +13,7 @@ function TransactionHistory() {
 
   const getapiCalls = async () => {
     try {
-      const apiUrl = `${base_url}/transactions/transac-history`;
+      const apiUrl = `https://localhost:4000/transactions/transac-history`;
       const transactions = await axios.get(apiUrl);
       setapiCalls(transactions.data.transactions);
     } catch (error) {

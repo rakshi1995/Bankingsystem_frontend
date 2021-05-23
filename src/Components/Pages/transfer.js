@@ -15,7 +15,7 @@ const Transfer = (props) => {
   useEffect(() => {
     const getapiCalls = async () => {
       try {
-        const apiUrl = `${base_url}/customer/get-customers`;
+        const apiUrl = `https://localhost:4000/customer/get-customers`;
         const viewCustomers = await axios.get(apiUrl);
         console.log(viewCustomers.data.customers);
         const customerOptions = viewCustomers.data.customers.map((customer) => {
@@ -43,7 +43,7 @@ const Transfer = (props) => {
     const transaction_amount = amount;
     try {
       const response = await axios.post(
-        `${base_url}/transactions/transfer`,
+        `https://localhost:4000/transactions/transfer`,
         {
           from_account,
           to_account,
