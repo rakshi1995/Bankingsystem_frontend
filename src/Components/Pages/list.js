@@ -14,7 +14,7 @@ const List = () => {
 
   const getapiCalls = async () => {
     try {
-      const apiUrl = `https://localhost:4000/customer/get-customers`;
+      const apiUrl = `${base_url}/customer/get-customers`;
       const viewCustomers = await axios.get(apiUrl);
       console.log(viewCustomers.data.customers);
       if (viewCustomers && viewCustomers.data)
